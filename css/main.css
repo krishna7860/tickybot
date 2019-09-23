@@ -1,0 +1,289 @@
+:root {
+  --primary-link: #ffd05a;
+  --primary-color-header: #40596b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Signika", sans-serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: -2px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+
+/* Utitlity */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+.bold {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+.lead {
+  font-size: 1.5rem;
+}
+.para_white {
+  color: #fff;
+}
+.italic {
+  font-style: italic;
+}
+.card {
+  background: #fff;
+
+  text-align: center;
+  border-radius: 4px 4px 0px 0px;
+}
+.underline {
+  background-color: #55c0ec;
+  width: 160px;
+  height: 3px;
+  margin-top: -7px;
+}
+
+/* Header Nav */
+.header {
+  background: var(--primary-color-header);
+}
+.header .navigation ul {
+  display: flex;
+  justify-content: center;
+  padding: 0.9rem 0rem;
+}
+.header .navigation ul li a {
+  color: var(--primary-link);
+  font-weight: 200;
+  font-size: 1.15rem;
+  padding-right: 0.85rem;
+}
+
+/* Showcase */
+.showcase {
+  background: #55c0ec;
+}
+
+.showcase-content {
+  display: flex;
+  justify-content: start;
+}
+.showcase-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+.showcase-content > div h1 {
+  font-size: 4.5rem;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.6);
+}
+.showcase-content > div h1 span {
+  color: rgba(0, 0, 0, 0.65);
+}
+.showcase-content > div p {
+  width: 70%;
+  margin-bottom: 1rem;
+}
+.showcase-content > div a {
+  display: flex;
+  background: hsla(0, 0%, 100%, 1);
+  justify-content: center;
+  padding: 0.4rem 3rem;
+  max-width: 300px;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.showcase-content > div a img {
+  width: 50px;
+  height: 50px;
+  padding-right: 1rem;
+  transition: 0.3s;
+}
+.showcase-content > div a span {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.6);
+}
+.showcase-content > div a span > span {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+}
+._svg img {
+  max-height: 90%;
+}
+.showcase-content > div a:hover {
+  transform: scale(1.03);
+}
+.showcase-content > div a:hover img {
+  transform: rotate(16deg) scale(1.6);
+}
+
+/* What is Ticky */
+.what_ticky {
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 200;
+  font-size: 1.15rem;
+}
+.what_ticky--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.what_ticky--content > div {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+
+.what_ticky--content h2 {
+  font-size: 2.3rem;
+  font-weight: 200;
+}
+.what_ticky--content > div p {
+  margin-right: 1rem;
+}
+
+/* How it works */
+.how_ticky {
+  background: #90ddaa;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 200;
+  font-size: 1.15rem;
+}
+.how_ticky--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.how_ticky--content h2 {
+  font-size: 2.3rem;
+  font-weight: 200;
+}
+.how_ticky-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.how_ticky-items .card-image {
+  background: #40596b;
+  padding: 4rem;
+}
+.how_ticky-items .card-content {
+  padding: 1rem 1rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.how_ticky-items .card-content a {
+  color: blue;
+  text-decoration: underline;
+}
+.how_ticky-items .card-content code {
+  color: red;
+}
+
+/* Add Ticky */
+
+.add_ticky {
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 200;
+  font-size: 1.15rem;
+}
+.add_ticky--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.add_ticky--content h3 {
+  font-size: 2.3rem;
+  font-weight: 200;
+}
+.add_ticky--content p {
+  width: 45%;
+  margin-top: 3rem;
+}
+.add_ticky--content a {
+  display: flex;
+  background: #40596b;
+  justify-content: center;
+  padding: 0.4rem 3rem;
+  max-width: 300px;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-top: 3rem;
+}
+.add_ticky--content a img {
+  width: 50px;
+  height: 50px;
+  padding-right: 1rem;
+  transition: 0.3s;
+}
+.add_ticky--content a span {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #fff;
+}
+.add_ticky--content a span > span {
+  font-weight: bold;
+  color: #fff;
+}
+.add_ticky--content a:hover {
+  transform: scale(1.03);
+}
+.add_ticky--content a:hover img {
+  transform: rotate(16deg) scale(1.6);
+}
+
+/* Footer */
+.main-footer {
+  background: #40596b;
+  padding: 1rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 200;
+  position: relative;
+}
+.main-footer a {
+  position: absolute;
+  background: #ffd05a;
+  padding: 0.5rem;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 4px;
+}
+.main-footer a img {
+  height: 25px;
+  width: 30px;
+}
